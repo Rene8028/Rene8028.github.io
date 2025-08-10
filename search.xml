@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Hexo常用指令</title>
+    <url>/posts/a5b8d333.html</url>
+    <content><![CDATA[<p>这里列举一些hexo写文章常用指令和语法，方便自己使用</p>
+<p>完整的文档可以在<a href="https://hexo.io/zh-cn/docs/">官方文档</a>找到</p>
+<h2 id="常用指令"><a href="#常用指令" class="headerlink" title="常用指令"></a>常用指令</h2><h3 id="创建文章"><a href="#创建文章" class="headerlink" title="创建文章"></a>创建文章</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo new <span class="string">&quot;文章标题&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
+
+<h3 id="启动本地预览服务器"><a href="#启动本地预览服务器" class="headerlink" title="启动本地预览服务器"></a>启动本地预览服务器</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+
+<h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+
+<h3 id="清除缓存"><a href="#清除缓存" class="headerlink" title="清除缓存"></a>清除缓存</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
+
+<h2 id="常用语法"><a href="#常用语法" class="headerlink" title="常用语法"></a>常用语法</h2><h3 id="文章属性设置"><a href="#文章属性设置" class="headerlink" title="文章属性设置"></a>文章属性设置</h3><table>
+<thead>
+<tr>
+<th>设置</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>layout</td>
+<td>布局</td>
+</tr>
+<tr>
+<td>title</td>
+<td>标题</td>
+</tr>
+<tr>
+<td>date</td>
+<td>建立日期</td>
+</tr>
+<tr>
+<td>updated</td>
+<td>更新日期</td>
+</tr>
+<tr>
+<td>comments</td>
+<td>是否开启文章的评论功能</td>
+</tr>
+<tr>
+<td>tags</td>
+<td>标签</td>
+</tr>
+<tr>
+<td>categories</td>
+<td>分类</td>
+</tr>
+<tr>
+<td>permalink</td>
+<td>覆盖文章的永久链接 永久链接应该以 &#x2F; 或 .html 结尾</td>
+</tr>
+<tr>
+<td>description</td>
+<td>纯文本的页面摘要</td>
+</tr>
+<tr>
+<td>copyright</td>
+<td>是否要声明copyright</td>
+</tr>
+<tr>
+<td>cover</td>
+<td>封面地址</td>
+</tr>
+<tr>
+<td>sitemap</td>
+<td>是否包含在sitemap里</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>网站</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>butterfly主题样式测试</title>
+    <url>/posts/a9127720.html</url>
+    <content><![CDATA[<p>This is intended as a quick reference and showcase. For more complete info, see <a href="http://daringfireball.net/projects/markdown/">John Gruber’s original spec</a> and the <a href="http://github.github.com/github-flavored-markdown/">Github-flavored Markdown info page</a>.</p>
+<p>This cheatsheet is specifically <em>Markdown Here’s</em> version of Github-flavored Markdown. This differs slightly in styling and syntax from what Github uses, so what you see below might vary a little from what you get in a <em>Markdown Here</em> email, but it should be pretty close.</p>
+<h5 id="Table-of-Contents"><a href="#Table-of-Contents" class="headerlink" title="Table of Contents"></a>Table of Contents</h5><p><a href="#headers">Headers</a><br><a href="#emphasis">Emphasis</a><br><a href="#lists">Lists</a><br><a href="#links">Links</a><br><a href="#images">Images</a><br><a href="#code">Code and Syntax Highlighting</a><br><a href="#blockquotes">Blockquotes</a><br><a href="#html">Inline HTML</a><br><a href="#hr">Horizontal Rule</a><br><a href="#lines">Line Breaks</a>  </p>
+<h2 id="Headers"><a href="#Headers" class="headerlink" title="Headers"></a>Headers</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># H1</span><br><span class="line">## H2</span><br><span class="line">### H3</span><br><span class="line">#### H4</span><br><span class="line">##### H5</span><br><span class="line">###### H6</span><br><span class="line"></span><br><span class="line">Alternatively, for H1 and H2, an underline-ish style:</span><br><span class="line"></span><br><span class="line">Alt-H1</span><br><span class="line">======</span><br><span class="line"></span><br><span class="line">Alt-H2</span><br><span class="line">------</span><br></pre></td></tr></table></figure>
+
+<h1 id="H1"><a href="#H1" class="headerlink" title="H1"></a>H1</h1><h2 id="H2"><a href="#H2" class="headerlink" title="H2"></a>H2</h2><h3 id="H3"><a href="#H3" class="headerlink" title="H3"></a>H3</h3><h4 id="H4"><a href="#H4" class="headerlink" title="H4"></a>H4</h4><h5 id="H5"><a href="#H5" class="headerlink" title="H5"></a>H5</h5><h6 id="H6"><a href="#H6" class="headerlink" title="H6"></a>H6</h6><p>Alternatively, for H1 and H2, an underline-ish style:</p>
+<h1 id="Alt-H1"><a href="#Alt-H1" class="headerlink" title="Alt-H1"></a>Alt-H1</h1><h2 id="Alt-H2"><a href="#Alt-H2" class="headerlink" title="Alt-H2"></a>Alt-H2</h2><h2 id="Emphasis"><a href="#Emphasis" class="headerlink" title="Emphasis"></a>Emphasis</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Emphasis, aka italics, with *asterisks* or _underscores_.</span><br><span class="line"></span><br><span class="line">Strong emphasis, aka bold, with **asterisks** or __underscores__.</span><br><span class="line"></span><br><span class="line">Combined emphasis with **asterisks and _underscores_**.</span><br></pre></td></tr></table></figure>
+
+<p>Emphasis, aka italics, with <em>asterisks</em> or <em>underscores</em>.</p>
+<p>Strong emphasis, aka bold, with <strong>asterisks</strong> or <strong>underscores</strong>.</p>
+<p>Combined emphasis with <strong>asterisks and <em>underscores</em></strong>.</p>
+<h2 id="Lists"><a href="#Lists" class="headerlink" title="Lists"></a>Lists</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1. First ordered list item</span><br><span class="line">2. Another item</span><br><span class="line">  * Unordered sub-list. </span><br><span class="line">1. Actual numbers don&#x27;t matter, just that it&#x27;s a number</span><br><span class="line">  1. Ordered sub-list</span><br><span class="line">4. And another item.  </span><br><span class="line">   </span><br><span class="line">   Some text that should be aligned with the above item.</span><br><span class="line"></span><br><span class="line">* Unordered list can use asterisks</span><br><span class="line">- Or minuses</span><br><span class="line">+ Or pluses</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>First ordered list item</li>
+<li>Another item</li>
+</ol>
+<ul>
+<li>Unordered sub-list.</li>
+</ul>
+<ol>
+<li><p>Actual numbers don’t matter, just that it’s a number</p>
+</li>
+<li><p>Ordered sub-list</p>
+</li>
+<li><p>And another item.  </p>
+<p>Some text that should be aligned with the above item.</p>
+</li>
+</ol>
+<ul>
+<li>Unordered list can use asterisks</li>
+</ul>
+<ul>
+<li>Or minuses</li>
+</ul>
+<ul>
+<li>Or pluses</li>
+</ul>
+<h2 id="Links"><a href="#Links" class="headerlink" title="Links"></a>Links</h2><p>There are two ways to create links.</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[I&#x27;m an inline-style link](https://www.google.com)</span><br><span class="line"></span><br><span class="line">[I&#x27;m a reference-style link][Arbitrary case-insensitive reference text]</span><br><span class="line"></span><br><span class="line">[You can use numbers for reference-style link definitions][1]</span><br><span class="line"></span><br><span class="line">Or leave it empty and use the [link text itself][]</span><br><span class="line"></span><br><span class="line">Some text to show that the reference links can follow later.</span><br><span class="line"></span><br><span class="line">[arbitrary case-insensitive reference text]: https://www.mozilla.org</span><br><span class="line">[1]: http://slashdot.org</span><br><span class="line">[link text itself]: http://www.reddit.com</span><br></pre></td></tr></table></figure>
+
+<p><a href="https://www.google.com/">I’m an inline-style link</a></p>
+<p><a href="https://www.mozilla.org/">I’m a reference-style link</a></p>
+<p><a href="http://slashdot.org/">You can use numbers for reference-style link definitions</a></p>
+<p>Or leave it empty and use the <a href="http://www.reddit.com/">link text itself</a></p>
+<p>Some text to show that the reference links can follow later.</p>
+<h2 id="Images"><a href="#Images" class="headerlink" title="Images"></a>Images</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Here&#x27;s our logo (hover to see the title text):</span><br><span class="line"></span><br><span class="line">Inline-style: </span><br><span class="line">![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png &quot;Logo Title Text 1&quot;)</span><br><span class="line"></span><br><span class="line">Reference-style: </span><br><span class="line">![alt text][logo]</span><br><span class="line"></span><br><span class="line">[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png &quot;Logo Title Text 2&quot;</span><br></pre></td></tr></table></figure>
+
+<p>Here’s our logo (hover to see the title text):</p>
+<p>Inline-style:<br><img src="https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png" alt="alt text" title="Logo Title Text 1"></p>
+<p>Reference-style:<br><img src="https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png" alt="alt text" title="Logo Title Text 2"></p>
+<h2 id="Code-and-Syntax-Highlighting"><a href="#Code-and-Syntax-Highlighting" class="headerlink" title="Code and Syntax Highlighting"></a>Code and Syntax Highlighting</h2><p>Code blocks are part of the Markdown spec, but syntax highlighting isn’t. However, many renderers – like Github’s and <em>Markdown Here</em> – support syntax highlighting. <em>Markdown Here</em> supports highlighting for dozens of languages (and not-really-languages, like diffs and HTTP headers); to see the complete list, and how to write the language names, see the <a href="http://softwaremaniacs.org/media/soft/highlight/test.html">highlight.js demo page</a>.</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Inline `code` has `back-ticks around` it.</span><br></pre></td></tr></table></figure>
+
+<p>Inline <code>code</code> has <code>back-ticks around</code> it.</p>
+<p>Blocks of code are either fenced by lines with three back-ticks <code>```</code>, or are indented with four spaces. I recommend only using the fenced code blocks – they’re easier and only they support syntax highlighting.</p>
+ <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> s = <span class="string">&quot;JavaScript syntax highlighting&quot;</span>;</span><br><span class="line"><span class="title function_">alert</span>(s);</span><br></pre></td></tr></table></figure>
+ <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = <span class="string">&quot;Python syntax highlighting&quot;</span></span><br><span class="line"><span class="built_in">print</span> s</span><br></pre></td></tr></table></figure>
+ <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">No language indicated, so no syntax highlighting. </span><br><span class="line">But let&#x27;s throw in a &lt;b&gt;tag&lt;/b&gt;.</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> s = <span class="string">&quot;JavaScript syntax highlighting&quot;</span>;</span><br><span class="line"><span class="title function_">alert</span>(s);</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = <span class="string">&quot;Python syntax highlighting&quot;</span></span><br><span class="line"><span class="built_in">print</span> s</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">No language indicated, so no syntax highlighting in Markdown Here (varies on Github). </span><br><span class="line">But let&#x27;s throw in a &lt;b&gt;tag&lt;/b&gt;.</span><br></pre></td></tr></table></figure>
+
+<p>(Github Wiki pages don’t seem to support syntax highlighting, so the above won’t be colourful (the strings are not red, for example). Try it out in a <em>Markdown Here</em> email or a Github Markdown README or Github Issue – you can preview a new Issue without submitting it.)</p>
+<p>Again, to see what languages are available for highlighting, and how to write those language names, see the <a href="http://softwaremaniacs.org/media/soft/highlight/test.html">highlight.js demo page</a>.</p>
+<h2 id="Blockquotes"><a href="#Blockquotes" class="headerlink" title="Blockquotes"></a>Blockquotes</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt; Blockquotes are very handy in email to emulate reply text.</span><br><span class="line">&gt; This line is part of the same quote.</span><br><span class="line"></span><br><span class="line">Quote break.</span><br><span class="line"></span><br><span class="line">&gt; This is a very long line that will still be quoted properly when it wraps. Oh boy let&#x27;s keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote. </span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Blockquotes are very handy in email to emulate reply text.<br>This line is part of the same quote.</p>
+</blockquote>
+<p>Quote break.</p>
+<blockquote>
+<p>This is a very long line that will still be quoted properly when it wraps. Oh boy let’s keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can <em>put</em> <strong>Markdown</strong> into a blockquote. </p>
+</blockquote>
+<h2 id="Inline-HTML"><a href="#Inline-HTML" class="headerlink" title="Inline HTML"></a>Inline HTML</h2><p>You can also use raw HTML in your Markdown, and it’ll mostly work pretty well. Here are a couple of common examples:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;dl&gt;</span><br><span class="line">  &lt;dt&gt;Definition list&lt;/dt&gt;</span><br><span class="line">  &lt;dd&gt;Is something people use sometimes.&lt;/dd&gt;</span><br><span class="line"></span><br><span class="line">  &lt;dt&gt;Markdown in HTML&lt;/dt&gt;</span><br><span class="line">  &lt;dd&gt;Does *not* work **very** well. Use HTML &lt;em&gt;tags&lt;/em&gt;.&lt;/dd&gt;</span><br><span class="line">&lt;/dl&gt;</span><br><span class="line"></span><br><span class="line">&lt;table&gt;</span><br><span class="line">  &lt;tr&gt;</span><br><span class="line">    &lt;th&gt;&lt;/th&gt;</span><br><span class="line">    &lt;th&gt;Tables&lt;/th&gt;</span><br><span class="line">    &lt;th&gt;Are&lt;/th&gt;</span><br><span class="line">    &lt;th&gt;Cool&lt;/th&gt;</span><br><span class="line">  &lt;/tr&gt;</span><br><span class="line">  &lt;tr&gt;</span><br><span class="line">    &lt;th&gt;Zebra&lt;/th&gt;</span><br><span class="line">    &lt;td&gt;Stripes&lt;/td&gt;</span><br><span class="line">    &lt;td&gt;Are&lt;/td&gt;</span><br><span class="line">    &lt;td&gt;Pretty&lt;/td&gt;</span><br><span class="line">  &lt;/tr&gt;</span><br><span class="line">  &lt;tr&gt;</span><br><span class="line">    &lt;th&gt;Here&lt;/th&gt;</span><br><span class="line">    &lt;td&gt;Is&lt;/td&gt;</span><br><span class="line">    &lt;td&gt;Another&lt;/td&gt;</span><br><span class="line">    &lt;td&gt;Row&lt;/td&gt;</span><br><span class="line">  &lt;/tr&gt;</span><br><span class="line">&lt;/table&gt;</span><br></pre></td></tr></table></figure>
+
+<dl>
+  <dt>Definition list</dt>
+  <dd>Is something people use sometimes.</dd>
+
+  <dt>Markdown in HTML</dt>
+  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
+</dl>
+
+<table>
+  <tr>
+    <th></th>
+    <th>Tables</th>
+    <th>Are</th>
+    <th>Cool</th>
+  </tr>
+  <tr>
+    <th>Zebra</th>
+    <td>Stripes</td>
+    <td>Are</td>
+    <td>Pretty</td>
+  </tr>
+  <tr>
+    <th>Here</th>
+    <td>Is</td>
+    <td>Another</td>
+    <td>Row</td>
+  </tr>
+</table>
+
+<p>Github-flavored Markdown supports a special table syntax, but <em>Markdown Here</em> does not support it yet. <a href="https://github.com/adam-p/markdown-here/issues/13">There’s an issue for it.</a></p>
+<h2 id="Horizontal-Rule"><a href="#Horizontal-Rule" class="headerlink" title="Horizontal Rule"></a>Horizontal Rule</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Three or more...</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">Hyphens</span><br><span class="line"></span><br><span class="line">***</span><br><span class="line"></span><br><span class="line">Asterisks</span><br><span class="line"></span><br><span class="line">___</span><br><span class="line"></span><br><span class="line">Underscores</span><br></pre></td></tr></table></figure>
+
+<p>Three or more…</p>
+<hr>
+<p>Hyphens</p>
+<hr>
+<p>Asterisks</p>
+<hr>
+<p>Underscores</p>
+<h2 id="Line-Breaks"><a href="#Line-Breaks" class="headerlink" title="Line Breaks"></a>Line Breaks</h2><p>My basic recommendation for learning how line breaks work is to experiment and discover – hit &lt;Enter&gt; once, then hit it twice, see what happens. You’ll soon learn to get what you want. “Markdown Toggle” is your friend. </p>
+<p>Here are some things to try out:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">With only a single newline, this line and</span><br><span class="line">this line will be a *single line*.</span><br><span class="line"></span><br><span class="line">But this one is separated by two newlines and so will be a *separate paragraph*.</span><br><span class="line"></span><br><span class="line">This line has two spaces at the end (hard for you to see, but trust me!).  </span><br><span class="line">So this is a separate line in the *same paragraph*.</span><br></pre></td></tr></table></figure>
+
+<p>With only a single newline, this line and<br>this line will be a <em>single line</em>.</p>
+<p>But this one is separated by two newlines and so will be a <em>separate paragraph</em>.</p>
+<p>This line has two spaces at the end (hard for you to see, but trust me!).<br>So this is a separate line in the <em>same paragraph</em>.</p>
+]]></content>
+      <tags>
+        <tag>其他</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>与世界交手后的我</title>
+    <url>/posts/34ad80a7.html</url>
+    <content><![CDATA[<p>我本是匆匆人间过客<br>构筑着美梦在世存活<br>该不该回答懵懂的我<br>该怎样才算顺应生活</p>
+<p>可是我从来不甘如此<br>天性生出了新的枷锁<br>偏离轨道的不羁魂魄<br>撞向世界的生存法则</p>
+<p>被摆布，被指责<br>被同化，被拉扯<br>世界刻下了他们的模样如出一辙<br>一如千篇一律的人间颂歌</p>
+<p>在这里人间如画，万家灯火交汇勾勒<br>真实的、虚假的，绘满了暗淡的星河<br>那当初懵懂的我，又在梦想改变什么<br>这如今失落的我，又在希望得到什么<br>明明从未窥见滤镜下的世界真正颜色<br>却仍在梦境中臆造着虚妄的文明之国</p>
+<hr>
+<p>我本是匆匆人间过客<br>构筑着美梦在世存活<br>该不该回答懵懂的我<br>该怎样才能改变生活</p>
+<p>因为我从来都是如此<br>天性使然不羁地生活<br>那我所拥抱的这世界<br>是否应为我改变什么</p>
+<p>去摆布，去指责<br>去同化，去拉扯<br>世界创造了万千生灵自在地放歌<br>一同前赴后继般飞蛾扑火</p>
+<p>在这里郁结的心，如释然般一路高歌<br>真挚的、虚妄的欢呼，一并回应着我<br>虽旅途中迷茫奔波失去了太多<br>但记忆和感受是真实留下来的<br>那我为与世界相遇而做的抉择<br>不恰是这场盛宴中最绚烂烟火</p>
+<hr>
+<p>又谁于耳畔低声地对我诉说<br>你与世界的妥协改变又能算什么<br>模糊的光影消匿，又留下了什么<br>此时的你，已经走遍了太多太多</p>
+<p>在这里，所有意义，早如扼喉般不可言说<br>真实的讽刺的结局还有天真的我<br>不懂规律和道理摸索着小心去做<br>迷茫太久早已迷失了最初的自我<br>一切正如你所说早已扭曲了因果<br>将随波逐流的我推上这虚假王座</p>
+<p>所有色彩肆意涂抹，迎接着人潮喧嚣奔过!<br>使他们的色泽艳丽到如出一辙<br>便再无法抱紧世界背后的颜色​<br>欺骗了世界也欺骗了天真的我<br>还找不到最终真正的快乐天国</p>
+<blockquote>
+<p>改自<a href="https://b23.tv/UyL5omP">【原创·词】与世界交手后</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>图文流程使用acme.sh全自动续签SSL证书</title>
+    <url>/posts/eca92ea3.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>其实网上已经有很多关于acme.sh的教程了，但是我还是想写一篇，这里面部分参考了官方WIKI。</p>
+<p>因为大多数都没有使用cloudflare的apikey来自动完成dns challenge的中文教程，都是使用nginx插件或者在根目录下放一个文件之类的来验证域名所有权，而我正巧需要续签的服务器上是不开放访问的私人后台，没办法公开访问来让Let’s Encryption验证，没办法只好使用dns验证域名所有权了。</p>
+<p>而且我的有图片流程，配置cfkey的流程会更详细一点吧</p>
+<p>顺便一提Let’s Encryption的SSL证书的有效期真的是越来越短了，前不久还取消了邮件证书到期通知，总是过期了以后才想起来手动续签实在麻烦，所以还是用acme.sh来自动续签吧。</p>
+<p>acme.sh会自动为你创建 cronjob， 每天 0:00 点自动检测所有的证书，如果快过期了需要更新，就会自动更新证书并安装。这样就再也不怕过期了。</p>
+<hr>
+<h2 id="安装acme-sh"><a href="#安装acme-sh" class="headerlink" title="安装acme.sh"></a>安装acme.sh</h2><p>ssh登录到你的服务器</p>
+<p>建议创建一个 ~&#x2F;.acme.sh&#x2F; 目录</p>
+<p>在目录下执行以下命令</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">curl https://get.acme.sh | sh -s email=youremail@example.com</span><br></pre></td></tr></table></figure>
+
+<h2 id="配置cloudflare的apikey"><a href="#配置cloudflare的apikey" class="headerlink" title="配置cloudflare的apikey"></a>配置cloudflare的apikey</h2><h3 id="首先去cloud-flare官网创建一个-API-令牌"><a href="#首先去cloud-flare官网创建一个-API-令牌" class="headerlink" title="首先去cloud flare官网创建一个 API 令牌"></a>首先去cloud flare官网创建一个 API 令牌</h3><p>在dashbord右上角的配置文件里面选择API令牌。</p>
+<p>创建API令牌的<a href="https://dash.cloudflare.com/profile/api-tokens">传送门</a></p>
+<p><img src="/img/posts/eca92ea3_1_zipped.jpg" alt="第一步"></p>
+<p>点击创建令牌。</p>
+<p><img src="/img/posts/eca92ea3_2_zipped.jpg" alt="第二步"></p>
+<p>使用编辑区域DNS的模板。</p>
+<p><img src="/img/posts/eca92ea3_3_zipped.jpg" alt="第三步"></p>
+<p>在区域资源里选择你要续期的顶级域名，其他的都不要改,然后点击继续以显示摘要。</p>
+<p><img src="/img/posts/eca92ea3_4_zipped.jpg" alt="第四步"></p>
+<p>点击创建令牌。</p>
+<p><img src="/img/posts/eca92ea3_5_zipped.jpg" alt="第五步"></p>
+<p>点击复制令牌，在复制之前千万别关闭这个页面，否则这个令牌key就不会再次展示了，只能重新创建一个了。</p>
+<p><img src="/img/posts/eca92ea3_6_zipped.jpg" alt="第六步"></p>
+<p>好了，令牌创建完了，先临时保存到一个地方，等会要用到。</p>
+<h3 id="回到dashbord主页复制区域ID"><a href="#回到dashbord主页复制区域ID" class="headerlink" title="回到dashbord主页复制区域ID"></a>回到dashbord主页复制区域ID</h3><p>找到要续期的域名，然后它右边的三个点，选择复制区域ID。</p>
+<p><img src="/img/posts/eca92ea3_7_zipped.jpg" alt="第七步"></p>
+<h3 id="修改acme-sh的默认CA"><a href="#修改acme-sh的默认CA" class="headerlink" title="修改acme.sh的默认CA"></a>修改acme.sh的默认CA</h3><p>acme.sh 脚本默认 CA 服务器是 ZeroSSL，有时可能会导致获取证书的时候一直出现：Pending，The CA is processing your order，please just wait.</p>
+<p>所以还是Let’s Encrypt比较好用，把 CA 服务器改成 Let’s Encrypt</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">acme.sh --set-default-ca --server letsencrypt</span><br></pre></td></tr></table></figure>
+
+<h3 id="配置acme-sh"><a href="#配置acme-sh" class="headerlink" title="配置acme.sh"></a>配置acme.sh</h3><p>在服务器的ssh上配置环境变量</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#你刚刚复制的cloudflare apikey</span></span><br><span class="line"><span class="built_in">export</span> CF_Token=<span class="string">&quot;xTLmwbvY6h8XbLYLRgzY3rosNxgez0lAidahOtZA&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#你刚刚复制的cloudflare区域ID</span></span><br><span class="line"><span class="built_in">export</span> CF_Zone_ID=<span class="string">&quot;bc3be8eeaf5ebf5986739dc533d8491ef&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#你的cloudflare邮箱</span></span><br><span class="line"><span class="built_in">export</span> CF_Email=<span class="string">&quot;youremail@example.com&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>这些设置的环境变量会被保存在 ~&#x2F;.acme.sh&#x2F;account.conf 中，以便在将来使用 dns_cf 签发新证书或续期现有证书时自动使用。</p>
+<h2 id="生成证书"><a href="#生成证书" class="headerlink" title="生成证书"></a>生成证书</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">acme.sh --issue --dns dns_cf -d example.com</span><br></pre></td></tr></table></figure>
+
+<p>执行成功后会输出类似以下的信息</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Your cert is <span class="keyword">in</span>: /root/.acme.sh/your.example.com_ecc/your.example.com.cer</span><br><span class="line">Your cert key is <span class="keyword">in</span>: /root/.acme.sh/your.example.com_ecc/your.example.com.key</span><br><span class="line">The intermediate CA cert is <span class="keyword">in</span>: /root/.acme.sh/your.example.com_ecc/ca.cer</span><br><span class="line">And the full-chain cert is <span class="keyword">in</span>: /root/.acme.sh/your.example.com_ecc/fullchain.cer</span><br></pre></td></tr></table></figure>
+
+<h2 id="复制安装证书"><a href="#复制安装证书" class="headerlink" title="复制安装证书"></a>复制安装证书</h2><p>证书生成好以后，需要把证书复制给对应的服务器目录去使用。</p>
+<p>每次自动续签证书也会自动执行下面配置的安装命令</p>
+<div class="note warning simple"><p>注意：必须使用 –install-cert 命令来把证书复制到目标文件，请勿直接使用 ~&#x2F;.acme.sh&#x2F; 目录下的证书文件，acme官方wiki说这里面的文件都是内部使用，而且目录结构将来可能会变化。</p>
+</div>
+
+<span class="hide-inline"><button type="button" class="hide-button" style="background-color: #000000;color: #fff"> </button><span class="hide-content">不过就目前而言直接复制然后改个名字用好像也没什么大问题</span></span>
+
+
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">acme.sh --install-cert -d example.com \</span><br><span class="line">--cert-file      /path/to/certfile/in/server/cert.pem  \</span><br><span class="line">--key-file       /path/to/keyfile/in/server/key.pem  \</span><br><span class="line">--fullchain-file /path/to/fullchain/certfile/server/fullchain.pem \</span><br><span class="line">--reloadcmd     <span class="string">&quot;the reload cmd for your webserver&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>默认情况下，证书每 60 天更新一次（可自定义）。</p>
+<p>更新证书后，reloadcmd 里的命令会自动执行，重启网页服务并更新证书。</p>
+<h2 id="自动更新-acme-sh"><a href="#自动更新-acme-sh" class="headerlink" title="自动更新 acme.sh"></a>自动更新 acme.sh</h2><p>开启自动升级:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">acme.sh --upgrade --auto-upgrade</span><br></pre></td></tr></table></figure>
+
+<p>之后，acme.sh 就会自动保持更新了。</p>
+<p>完成啦，以后就再也不用担心证书过期的问题了。</p>
+<hr>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://github.com/acmesh-official/acme.sh/wiki/">acme.sh官方WIKI</a></p>
+<p>这也算是我写过第一篇技术相关的长篇博客吧，好像这个blog自创建以来也没写什么正经东西。</p>
+]]></content>
+      <categories>
+        <category>WEB</category>
+      </categories>
+      <tags>
+        <tag>Server</tag>
+        <tag>WEB</tag>
+        <tag>SSL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>在世界终结之时旁观者的独白</title>
+    <url>/posts/5d23364b.html</url>
+    <content><![CDATA[<p>是的，正如你所想的，这个世界不再会变好了。去关心你想关心的，去看你想看的，去厌恶，去憎恨，去爱，都无所谓的。因为这世界就是很糟糕，未来只会比现在更魔幻。这个世界从不美好，每个在虚无中飘渺的痛苦着的人，幻想着他们期望的延续，将其视为希望。你要知道，你们的苦难从来都是没有理由强加在你身上的。从你们所谓的科学角度而言，生命是一场由繁殖所传播的疾病，死亡率为百分之一百。我想说的是，对于你们来说，死亡是唯一的结局。生命被强迫来到这世上，最终又被强迫着离开，从头到尾，都是迷惘的灵魂和脆弱的躯壳无谓的挣扎。然而即使这样呢，还是有人，想要去追寻自己生命的目的，但每次却又都是这么无力，他们有的时候也会哭泣，也会失望。但是这一切终将会迎来终结，你也知道的，太阳总是会落下的，不是吗。梦再美，也是该醒了。对我而言，这里没有所谓过去，当然也不存在什么未来，当下的一瞬便是你们所拥有的一切。诚然，世界是虚无的，一切都是无意义的，但你们仍可以赋予和创造世界你自己所定义的意义。我不会参与“世界”这场游戏，也不被一切固有观念体系规则所束缚，也不会在乎着怎样的结局，我只希望在这世界尽头，遥望你们在无意义之上创造各自自定义的意义。</p>
+<hr>
+<blockquote>
+<p>随便写的，类似于终末之诗，可以当作大结局彩蛋之类的吧。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>月光</title>
+    <url>/posts/307d4838.html</url>
+    <content><![CDATA[<p>起初，月亮也不知道自己是月亮<br>它的世界开始时它并没有光芒<br>它没有梦，也不去想<br>光告诉它，它也有它可以去的地方<br>光告诉它，它也有它可以拥有的梦<br>光告诉它，它也有它可以拥有的光<br>光告诉它很多，随后便消失了<br>它茫然地等，它想过很多，它在等光<br>有一时刻，光来了<br>它说它不知道，自己该去什么地方<br>“那么，替我照耀这世界吧，哪怕微弱的一点。”<br>它依旧迷茫<br>它依旧没有梦，也不去想<br>但它知道，光在远方<br>它眺望光，思念光<br>它没有忘记约定<br>黑夜开始时，它就是光</p>
+]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
+</search>

@@ -1,0 +1,319 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>butterfly主题样式测试 | Rene's Blog</title><meta name="author" content="Rene8028,Rene8028@outlook.com"><meta name="copyright" content="Rene8028"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="This is intended as a quick reference and showcase. For more complete info, see John Gruber’s original spec and the Github-flavored Markdown info page. This cheatsheet is specifically Markdown Here’s">
+<meta property="og:type" content="article">
+<meta property="og:title" content="butterfly主题样式测试">
+<meta property="og:url" content="https://www.8028.top/posts/a9127720.html">
+<meta property="og:site_name" content="Rene&#39;s Blog">
+<meta property="og:description" content="This is intended as a quick reference and showcase. For more complete info, see John Gruber’s original spec and the Github-flavored Markdown info page. This cheatsheet is specifically Markdown Here’s">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://www.8028.top/img/avatar.png">
+<meta property="article:published_time" content="2023-07-12T07:12:39.000Z">
+<meta property="article:modified_time" content="2025-08-10T14:41:36.311Z">
+<meta property="article:author" content="Rene8028">
+<meta property="article:tag" content="其他">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.8028.top/img/avatar.png"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "butterfly主题样式测试",
+  "url": "https://www.8028.top/posts/a9127720.html",
+  "image": "https://www.8028.top/img/avatar.png",
+  "datePublished": "2023-07-12T07:12:39.000Z",
+  "dateModified": "2025-08-10T14:41:36.311Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Rene8028",
+      "url": "https://github.com/Rene8028"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.svg"><link rel="canonical" href="https://www.8028.top/posts/a9127720.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":100,"languages":{"author":"作者: Rene8028","link":"链接: ","source":"来源: Rene's Blog","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'medium_zoom',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'butterfly主题样式测试',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>(()=>{
+  const $loadingBox = document.getElementById('loading-box')
+  const $body = document.body
+  const preloader = {
+    endLoading: () => {
+      if ($loadingBox.classList.contains('loaded')) return
+      $body.style.overflow = ''
+      $loadingBox.classList.add('loaded')
+    },
+    initLoading: () => {
+      $body.style.overflow = 'hidden'
+      $loadingBox.classList.remove('loaded')
+    }
+  }
+
+  preloader.initLoading()
+
+  if (document.readyState === 'complete') {
+    preloader.endLoading()
+  } else {
+    window.addEventListener('load', preloader.endLoading)
+    document.addEventListener('DOMContentLoaded', preloader.endLoading)
+    // Add timeout protection: force end after 7 seconds
+    setTimeout(preloader.endLoading, 7000)
+  }
+
+  if (false) {
+    btf.addGlobalFn('pjaxSend', preloader.initLoading, 'preloader_init')
+    btf.addGlobalFn('pjaxComplete', preloader.endLoading, 'preloader_end')
+  }
+})()</script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">7</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/pay/"><i class="fa-fw fas fa-donate"></i><span> 赞助</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/img/blue1.png);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><img class="site-icon" src="/img/cloud.png" alt="Logo"><span class="site-name">Rene's Blog</span></a><a class="nav-page-title" href="/"><span class="site-name">butterfly主题样式测试</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/pay/"><i class="fa-fw fas fa-donate"></i><span> 赞助</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">butterfly主题样式测试</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="fa-fw post-meta-icon far fa-calendar-alt"></i><span class="post-meta-label">发表于</span><time datetime="2023-07-12T07:12:39.000Z" title="发表于 2023-07-12 15:12:39">2023-07-12</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">总字数:</span><span class="word-count">1.2k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>7分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><p>This is intended as a quick reference and showcase. For more complete info, see <a target="_blank" rel="noopener external nofollow noreferrer" href="http://daringfireball.net/projects/markdown/">John Gruber’s original spec</a> and the <a target="_blank" rel="noopener external nofollow noreferrer" href="http://github.github.com/github-flavored-markdown/">Github-flavored Markdown info page</a>.</p>
+<p>This cheatsheet is specifically <em>Markdown Here’s</em> version of Github-flavored Markdown. This differs slightly in styling and syntax from what Github uses, so what you see below might vary a little from what you get in a <em>Markdown Here</em> email, but it should be pretty close.</p>
+<h5 id="Table-of-Contents"><a href="#Table-of-Contents" class="headerlink" title="Table of Contents"></a>Table of Contents</h5><p><a href="#headers">Headers</a><br><a href="#emphasis">Emphasis</a><br><a href="#lists">Lists</a><br><a href="#links">Links</a><br><a href="#images">Images</a><br><a href="#code">Code and Syntax Highlighting</a><br><a href="#blockquotes">Blockquotes</a><br><a href="#html">Inline HTML</a><br><a href="#hr">Horizontal Rule</a><br><a href="#lines">Line Breaks</a>  </p>
+<h2 id="Headers"><a href="#Headers" class="headerlink" title="Headers"></a>Headers</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"># H1</span><br><span class="line">## H2</span><br><span class="line">### H3</span><br><span class="line">#### H4</span><br><span class="line">##### H5</span><br><span class="line">###### H6</span><br><span class="line"></span><br><span class="line">Alternatively, for H1 and H2, an underline-ish style:</span><br><span class="line"></span><br><span class="line">Alt-H1</span><br><span class="line">======</span><br><span class="line"></span><br><span class="line">Alt-H2</span><br><span class="line">------</span><br></pre></td></tr></table></figure>
+
+<h1 id="H1"><a href="#H1" class="headerlink" title="H1"></a>H1</h1><h2 id="H2"><a href="#H2" class="headerlink" title="H2"></a>H2</h2><h3 id="H3"><a href="#H3" class="headerlink" title="H3"></a>H3</h3><h4 id="H4"><a href="#H4" class="headerlink" title="H4"></a>H4</h4><h5 id="H5"><a href="#H5" class="headerlink" title="H5"></a>H5</h5><h6 id="H6"><a href="#H6" class="headerlink" title="H6"></a>H6</h6><p>Alternatively, for H1 and H2, an underline-ish style:</p>
+<h1 id="Alt-H1"><a href="#Alt-H1" class="headerlink" title="Alt-H1"></a>Alt-H1</h1><h2 id="Alt-H2"><a href="#Alt-H2" class="headerlink" title="Alt-H2"></a>Alt-H2</h2><h2 id="Emphasis"><a href="#Emphasis" class="headerlink" title="Emphasis"></a>Emphasis</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Emphasis, aka italics, with *asterisks* or _underscores_.</span><br><span class="line"></span><br><span class="line">Strong emphasis, aka bold, with **asterisks** or __underscores__.</span><br><span class="line"></span><br><span class="line">Combined emphasis with **asterisks and _underscores_**.</span><br></pre></td></tr></table></figure>
+
+<p>Emphasis, aka italics, with <em>asterisks</em> or <em>underscores</em>.</p>
+<p>Strong emphasis, aka bold, with <strong>asterisks</strong> or <strong>underscores</strong>.</p>
+<p>Combined emphasis with <strong>asterisks and <em>underscores</em></strong>.</p>
+<h2 id="Lists"><a href="#Lists" class="headerlink" title="Lists"></a>Lists</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">1. First ordered list item</span><br><span class="line">2. Another item</span><br><span class="line">  * Unordered sub-list. </span><br><span class="line">1. Actual numbers don&#x27;t matter, just that it&#x27;s a number</span><br><span class="line">  1. Ordered sub-list</span><br><span class="line">4. And another item.  </span><br><span class="line">   </span><br><span class="line">   Some text that should be aligned with the above item.</span><br><span class="line"></span><br><span class="line">* Unordered list can use asterisks</span><br><span class="line">- Or minuses</span><br><span class="line">+ Or pluses</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>First ordered list item</li>
+<li>Another item</li>
+</ol>
+<ul>
+<li>Unordered sub-list.</li>
+</ul>
+<ol>
+<li><p>Actual numbers don’t matter, just that it’s a number</p>
+</li>
+<li><p>Ordered sub-list</p>
+</li>
+<li><p>And another item.  </p>
+<p>Some text that should be aligned with the above item.</p>
+</li>
+</ol>
+<ul>
+<li>Unordered list can use asterisks</li>
+</ul>
+<ul>
+<li>Or minuses</li>
+</ul>
+<ul>
+<li>Or pluses</li>
+</ul>
+<h2 id="Links"><a href="#Links" class="headerlink" title="Links"></a>Links</h2><p>There are two ways to create links.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">[I&#x27;m an inline-style link](https://www.google.com)</span><br><span class="line"></span><br><span class="line">[I&#x27;m a reference-style link][Arbitrary case-insensitive reference text]</span><br><span class="line"></span><br><span class="line">[You can use numbers for reference-style link definitions][1]</span><br><span class="line"></span><br><span class="line">Or leave it empty and use the [link text itself][]</span><br><span class="line"></span><br><span class="line">Some text to show that the reference links can follow later.</span><br><span class="line"></span><br><span class="line">[arbitrary case-insensitive reference text]: https://www.mozilla.org</span><br><span class="line">[1]: http://slashdot.org</span><br><span class="line">[link text itself]: http://www.reddit.com</span><br></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.google.com/">I’m an inline-style link</a></p>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.mozilla.org/">I’m a reference-style link</a></p>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="http://slashdot.org/">You can use numbers for reference-style link definitions</a></p>
+<p>Or leave it empty and use the <a target="_blank" rel="noopener external nofollow noreferrer" href="http://www.reddit.com/">link text itself</a></p>
+<p>Some text to show that the reference links can follow later.</p>
+<h2 id="Images"><a href="#Images" class="headerlink" title="Images"></a>Images</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Here&#x27;s our logo (hover to see the title text):</span><br><span class="line"></span><br><span class="line">Inline-style: </span><br><span class="line">![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png &quot;Logo Title Text 1&quot;)</span><br><span class="line"></span><br><span class="line">Reference-style: </span><br><span class="line">![alt text][logo]</span><br><span class="line"></span><br><span class="line">[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png &quot;Logo Title Text 2&quot;</span><br></pre></td></tr></table></figure>
+
+<p>Here’s our logo (hover to see the title text):</p>
+<p>Inline-style:<br><img src="https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png" alt="alt text" title="Logo Title Text 1"></p>
+<p>Reference-style:<br><img src="https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png" alt="alt text" title="Logo Title Text 2"></p>
+<h2 id="Code-and-Syntax-Highlighting"><a href="#Code-and-Syntax-Highlighting" class="headerlink" title="Code and Syntax Highlighting"></a>Code and Syntax Highlighting</h2><p>Code blocks are part of the Markdown spec, but syntax highlighting isn’t. However, many renderers – like Github’s and <em>Markdown Here</em> – support syntax highlighting. <em>Markdown Here</em> supports highlighting for dozens of languages (and not-really-languages, like diffs and HTTP headers); to see the complete list, and how to write the language names, see the <a target="_blank" rel="noopener external nofollow noreferrer" href="http://softwaremaniacs.org/media/soft/highlight/test.html">highlight.js demo page</a>.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Inline `code` has `back-ticks around` it.</span><br></pre></td></tr></table></figure>
+
+<p>Inline <code>code</code> has <code>back-ticks around</code> it.</p>
+<p>Blocks of code are either fenced by lines with three back-ticks <code>```</code>, or are indented with four spaces. I recommend only using the fenced code blocks – they’re easier and only they support syntax highlighting.</p>
+ <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> s = <span class="string">&quot;JavaScript syntax highlighting&quot;</span>;</span><br><span class="line"><span class="title function_">alert</span>(s);</span><br></pre></td></tr></table></figure>
+ <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">s = <span class="string">&quot;Python syntax highlighting&quot;</span></span><br><span class="line"><span class="built_in">print</span> s</span><br></pre></td></tr></table></figure>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">No language indicated, so no syntax highlighting. </span><br><span class="line">But let&#x27;s throw in a &lt;b&gt;tag&lt;/b&gt;.</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> s = <span class="string">&quot;JavaScript syntax highlighting&quot;</span>;</span><br><span class="line"><span class="title function_">alert</span>(s);</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">s = <span class="string">&quot;Python syntax highlighting&quot;</span></span><br><span class="line"><span class="built_in">print</span> s</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">No language indicated, so no syntax highlighting in Markdown Here (varies on Github). </span><br><span class="line">But let&#x27;s throw in a &lt;b&gt;tag&lt;/b&gt;.</span><br></pre></td></tr></table></figure>
+
+<p>(Github Wiki pages don’t seem to support syntax highlighting, so the above won’t be colourful (the strings are not red, for example). Try it out in a <em>Markdown Here</em> email or a Github Markdown README or Github Issue – you can preview a new Issue without submitting it.)</p>
+<p>Again, to see what languages are available for highlighting, and how to write those language names, see the <a target="_blank" rel="noopener external nofollow noreferrer" href="http://softwaremaniacs.org/media/soft/highlight/test.html">highlight.js demo page</a>.</p>
+<h2 id="Blockquotes"><a href="#Blockquotes" class="headerlink" title="Blockquotes"></a>Blockquotes</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt; Blockquotes are very handy in email to emulate reply text.</span><br><span class="line">&gt; This line is part of the same quote.</span><br><span class="line"></span><br><span class="line">Quote break.</span><br><span class="line"></span><br><span class="line">&gt; This is a very long line that will still be quoted properly when it wraps. Oh boy let&#x27;s keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote. </span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Blockquotes are very handy in email to emulate reply text.<br>This line is part of the same quote.</p>
+</blockquote>
+<p>Quote break.</p>
+<blockquote>
+<p>This is a very long line that will still be quoted properly when it wraps. Oh boy let’s keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can <em>put</em> <strong>Markdown</strong> into a blockquote. </p>
+</blockquote>
+<h2 id="Inline-HTML"><a href="#Inline-HTML" class="headerlink" title="Inline HTML"></a>Inline HTML</h2><p>You can also use raw HTML in your Markdown, and it’ll mostly work pretty well. Here are a couple of common examples:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">&lt;dl&gt;</span><br><span class="line">  &lt;dt&gt;Definition list&lt;/dt&gt;</span><br><span class="line">  &lt;dd&gt;Is something people use sometimes.&lt;/dd&gt;</span><br><span class="line"></span><br><span class="line">  &lt;dt&gt;Markdown in HTML&lt;/dt&gt;</span><br><span class="line">  &lt;dd&gt;Does *not* work **very** well. Use HTML &lt;em&gt;tags&lt;/em&gt;.&lt;/dd&gt;</span><br><span class="line">&lt;/dl&gt;</span><br><span class="line"></span><br><span class="line">&lt;table&gt;</span><br><span class="line">  &lt;tr&gt;</span><br><span class="line">    &lt;th&gt;&lt;/th&gt;</span><br><span class="line">    &lt;th&gt;Tables&lt;/th&gt;</span><br><span class="line">    &lt;th&gt;Are&lt;/th&gt;</span><br><span class="line">    &lt;th&gt;Cool&lt;/th&gt;</span><br><span class="line">  &lt;/tr&gt;</span><br><span class="line">  &lt;tr&gt;</span><br><span class="line">    &lt;th&gt;Zebra&lt;/th&gt;</span><br><span class="line">    &lt;td&gt;Stripes&lt;/td&gt;</span><br><span class="line">    &lt;td&gt;Are&lt;/td&gt;</span><br><span class="line">    &lt;td&gt;Pretty&lt;/td&gt;</span><br><span class="line">  &lt;/tr&gt;</span><br><span class="line">  &lt;tr&gt;</span><br><span class="line">    &lt;th&gt;Here&lt;/th&gt;</span><br><span class="line">    &lt;td&gt;Is&lt;/td&gt;</span><br><span class="line">    &lt;td&gt;Another&lt;/td&gt;</span><br><span class="line">    &lt;td&gt;Row&lt;/td&gt;</span><br><span class="line">  &lt;/tr&gt;</span><br><span class="line">&lt;/table&gt;</span><br></pre></td></tr></table></figure>
+
+<dl>
+  <dt>Definition list</dt>
+  <dd>Is something people use sometimes.</dd>
+
+  <dt>Markdown in HTML</dt>
+  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
+</dl>
+
+<table>
+  <tr>
+    <th></th>
+    <th>Tables</th>
+    <th>Are</th>
+    <th>Cool</th>
+  </tr>
+  <tr>
+    <th>Zebra</th>
+    <td>Stripes</td>
+    <td>Are</td>
+    <td>Pretty</td>
+  </tr>
+  <tr>
+    <th>Here</th>
+    <td>Is</td>
+    <td>Another</td>
+    <td>Row</td>
+  </tr>
+</table>
+
+<p>Github-flavored Markdown supports a special table syntax, but <em>Markdown Here</em> does not support it yet. <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/adam-p/markdown-here/issues/13">There’s an issue for it.</a></p>
+<h2 id="Horizontal-Rule"><a href="#Horizontal-Rule" class="headerlink" title="Horizontal Rule"></a>Horizontal Rule</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">Three or more...</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">Hyphens</span><br><span class="line"></span><br><span class="line">***</span><br><span class="line"></span><br><span class="line">Asterisks</span><br><span class="line"></span><br><span class="line">___</span><br><span class="line"></span><br><span class="line">Underscores</span><br></pre></td></tr></table></figure>
+
+<p>Three or more…</p>
+<hr>
+<p>Hyphens</p>
+<hr>
+<p>Asterisks</p>
+<hr>
+<p>Underscores</p>
+<h2 id="Line-Breaks"><a href="#Line-Breaks" class="headerlink" title="Line Breaks"></a>Line Breaks</h2><p>My basic recommendation for learning how line breaks work is to experiment and discover – hit &lt;Enter&gt; once, then hit it twice, see what happens. You’ll soon learn to get what you want. “Markdown Toggle” is your friend. </p>
+<p>Here are some things to try out:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">With only a single newline, this line and</span><br><span class="line">this line will be a *single line*.</span><br><span class="line"></span><br><span class="line">But this one is separated by two newlines and so will be a *separate paragraph*.</span><br><span class="line"></span><br><span class="line">This line has two spaces at the end (hard for you to see, but trust me!).  </span><br><span class="line">So this is a separate line in the *same paragraph*.</span><br></pre></td></tr></table></figure>
+
+<p>With only a single newline, this line and<br>this line will be a <em>single line</em>.</p>
+<p>But this one is separated by two newlines and so will be a <em>separate paragraph</em>.</p>
+<p>This line has two spaces at the end (hard for you to see, but trust me!).<br>So this is a separate line in the <em>same paragraph</em>.</p>
+</article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%85%B6%E4%BB%96/">其他</a></div><div class="post-share"><div class="social-share" data-image="/img/avatar.png" data-sites="qq,wechat,weibo,facebook,twitter"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><a href="/pay/"><div class="reward-button"><i class="fas fa-donate"></i> 赞助</div></a></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/posts/a5b8d333.html" title="Hexo常用指令"><img class="cover" src="/img/cover/hexo_logo.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">Hexo常用指令</div></div><div class="info-2"><div class="info-item-1">列举一些hexo写文章常用指令和语法</div></div></div></a><a class="pagination-related" href="/posts/34ad80a7.html" title="与世界交手后的我"><img class="cover" src="/img/cover/34ad80a7.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">与世界交手后的我</div></div><div class="info-2"><div class="info-item-1">我本是匆匆人间过客构筑着美梦在世存活该不该回答懵懂的我该怎样才算顺应生活 可是我从来不甘如此天性生出了新的枷锁偏离轨道的不羁魂魄撞向世界的生存法则 被摆布，被指责被同化，被拉扯世界刻下了他们的模样如出一辙一如千篇一律的人间颂歌 在这里人间如画，万家灯火交汇勾勒真实的、虚假的，绘满了暗淡的星河那当初懵懂的我，又在梦想改变什么这如今失落的我，又在希望得到什么明明从未窥见滤镜下的世界真正颜色却仍在梦境中臆造着虚妄的文明之国  我本是匆匆人间过客构筑着美梦在世存活该不该回答懵懂的我该怎样才能改变生活 因为我从来都是如此天性使然不羁地生活那我所拥抱的这世界是否应为我改变什么 去摆布，去指责去同化，去拉扯世界创造了万千生灵自在地放歌一同前赴后继般飞蛾扑火 在这里郁结的心，如释然般一路高歌真挚的、虚妄的欢呼，一并回应着我虽旅途中迷茫奔波失去了太多但记忆和感受是真实留下来的那我为与世界相遇而做的抉择不恰是这场盛宴中最绚烂烟火  又谁于耳畔低声地对我诉说你与世界的妥协改变又能算什么模糊的光影消匿，又留下了什么此时的你，已经走遍了太多太多 在这里，所有意义，早如扼喉般不可言说真实的讽刺的结局还有天真...</div></div></div></a></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Rene8028</div><div class="author-info-description">Rene的个人博客</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">7</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><a id="card-info-btn" target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/Rene8028"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/Rene8028" rel="external nofollow noreferrer" target="_blank" title="Github"><i class="fab fa-github" style="color: #000000;"></i></a><a class="social-icon" href="https://space.bilibili.com/429868935" rel="external nofollow noreferrer" target="_blank" title="Bilibili"><i class="fab fa-bilibili" style="color: #000000;"></i></a><a class="social-icon" href="https://music.163.com/#/user/home?id=7921628827" rel="external nofollow noreferrer" target="_blank" title="NetEase_CloudMusic"><i class="fas fa-music" style="color: #000000;"></i></a><a class="social-icon" href="mailto:Rene8028@outlook.com" rel="external nofollow noreferrer" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #000000;"></i></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#Table-of-Contents"><span class="toc-number">1.</span> <span class="toc-text">Table of Contents</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Headers"><span class="toc-number"></span> <span class="toc-text">Headers</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#H1"><span class="toc-number"></span> <span class="toc-text">H1</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#H2"><span class="toc-number"></span> <span class="toc-text">H2</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#H3"><span class="toc-number"></span> <span class="toc-text">H3</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#H4"><span class="toc-number"></span> <span class="toc-text">H4</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#H5"><span class="toc-number">1.</span> <span class="toc-text">H5</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#H6"><span class="toc-number">1.1.</span> <span class="toc-text">H6</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Alt-H1"><span class="toc-number"></span> <span class="toc-text">Alt-H1</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Alt-H2"><span class="toc-number"></span> <span class="toc-text">Alt-H2</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Emphasis"><span class="toc-number"></span> <span class="toc-text">Emphasis</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Lists"><span class="toc-number"></span> <span class="toc-text">Lists</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Links"><span class="toc-number"></span> <span class="toc-text">Links</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Images"><span class="toc-number"></span> <span class="toc-text">Images</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Code-and-Syntax-Highlighting"><span class="toc-number"></span> <span class="toc-text">Code and Syntax Highlighting</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Blockquotes"><span class="toc-number"></span> <span class="toc-text">Blockquotes</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Inline-HTML"><span class="toc-number"></span> <span class="toc-text">Inline HTML</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Horizontal-Rule"><span class="toc-number"></span> <span class="toc-text">Horizontal Rule</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Line-Breaks"><span class="toc-number"></span> <span class="toc-text">Line Breaks</span></a></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/eca92ea3.html" title="图文流程使用acme.sh全自动续签SSL证书"><img src="/img/cover/lets_encrypt.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="图文流程使用acme.sh全自动续签SSL证书"/></a><div class="content"><a class="title" href="/posts/eca92ea3.html" title="图文流程使用acme.sh全自动续签SSL证书">图文流程使用acme.sh全自动续签SSL证书</a><time datetime="2025-06-10T08:59:22.000Z" title="发表于 2025-06-10 16:59:22">2025-06-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/a5b8d333.html" title="Hexo常用指令"><img src="/img/cover/hexo_logo.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hexo常用指令"/></a><div class="content"><a class="title" href="/posts/a5b8d333.html" title="Hexo常用指令">Hexo常用指令</a><time datetime="2025-01-24T09:02:34.000Z" title="发表于 2025-01-24 17:02:34">2025-01-24</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/a9127720.html" title="butterfly主题样式测试">butterfly主题样式测试</a><time datetime="2023-07-12T07:12:39.000Z" title="发表于 2023-07-12 15:12:39">2023-07-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/34ad80a7.html" title="与世界交手后的我"><img src="/img/cover/34ad80a7.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="与世界交手后的我"/></a><div class="content"><a class="title" href="/posts/34ad80a7.html" title="与世界交手后的我">与世界交手后的我</a><time datetime="2023-04-07T09:47:00.000Z" title="发表于 2023-04-07 17:47:00">2023-04-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/5d23364b.html" title="在世界终结之时旁观者的独白"><img src="/img/avatar1920x1080.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="在世界终结之时旁观者的独白"/></a><div class="content"><a class="title" href="/posts/5d23364b.html" title="在世界终结之时旁观者的独白">在世界终结之时旁观者的独白</a><time datetime="2023-03-13T10:43:00.000Z" title="发表于 2023-03-13 18:43:00">2023-03-13</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(/img/blue2.png);"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2022 - 2025 By Rene8028</span></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://hexo.io/" rel="external nofollow noreferrer" style="margin-inline:5px"><img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&amp;logo=hexo" title="由 Hexo 强力驱动"/></a><a class="github-badge" target="_blank" href="https://github.com/jerryc127/hexo-theme-butterfly" rel="external nofollow noreferrer" style="margin-inline:5px"><img src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&amp;logo=bitdefender" title="由 Butterfly 提供主题"/></a><a class="github-badge" target="_blank" href="https://vercel.com/" rel="external nofollow noreferrer" style="margin-inline:5px"><img src="https://img.shields.io/badge/Hosted-Vercel-brightgreen?style=flat&amp;logo=Vercel" title="由 Vercel 提供免费的静态托管服务"/></a><a class="github-badge" target="_blank" href="https://github.com/" rel="external nofollow noreferrer" style="margin-inline:5px"><img src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&amp;logo=GitHub" title="由 Github 提供项目源码托管"/></a><a class="github-badge" target="_blank" href="https://www.cloudflare.com/" rel="external nofollow noreferrer" style="margin-inline:5px"><img src="https://img.shields.io/badge/DNS-CLOUDFLARE-d021d6?style=flat&amp;logo=CLOUDFLARE" title="由 CLOUDFLARE 提供DNS解析"/></a></p></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script><div class="js-pjax"></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div></body></html>
